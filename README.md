@@ -40,3 +40,41 @@ A group of ancient code hunters stumbled upon a mysterious source of code coming
 - Home page will have a breif description of the game(backstory) then a button to play game
     - Play game button will bring you to a page to either create an account or log in before playing the game to either retrieve previously stored data or to create a new user to store game data to. 
     - Create a wireframe of the user interface around the game display with game information.
+
+## Resources found during research
+
+These are some resources found during research, we do not NEED to use these. Ideas for brainstorming
+
+RPG framework found on github:
+
+- [RPG framework](https://github.com/RSamaium/RPG-JS)
+
+Info on server for game:
+
+- [http-server](https://github.com/http-party/http-server)
+- [more http-server](https://www.npmjs.com/package/http-server)
+* http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+
+Phaser and Tiled info:
+
+- [Phaser docs on getting started](http://phaser.io/tutorials/getting-started-phaser3)
+* In this tutorial we're going to cover setting-up a development environment with which you can build your Phaser games.
+- [Tiled docs](https://doc.mapeditor.org/en/stable/manual/introduction/#about-tiled)
+- [Modular game worlds with phaser and tiled](https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6)
+* In this tutorial we're going to cover setting-up a development environment with which you can build your Phaser games.
+
+Info for authentication:
+
+- [Passport docs for authentication](http://www.passportjs.org/)
+
+General info on game development using HTML, CSS, JavaScript:
+
+- [MDN docs on game development](https://developer.mozilla.org/en-US/docs/Games)
+- [MDN docs on 2D and 3D graphics](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+- [W3 Schools on HTML canvas](https://www.w3schools.com/html/html5_canvas.asp)
+* An HTML element used as a "container" for JavaScript to manipulate. For example this is where the game would be displayed so the script file can generate all of the graphics and logic.
+- [Example of a game being created with canvas](https://www.youtube.com/watch?v=vcW6wg15GMY)
+
+Opensource sprites(graphics/images) for game development:
+
+- [Opensource sprites](https://opengameart.org/)
