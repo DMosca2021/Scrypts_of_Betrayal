@@ -1,0 +1,23 @@
+{
+  "name": "jsgame",
+  "version": "1.0.0",
+  "description": "A javascript based game for project2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMosca2021/experiments-4-projects.git"
+  },
+  "author": "Devin Mosca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMosca2021/experiments-4-projects/issues"
+  },
+  "homepage": "https://github.com/DMosca2021/experiments-4-projects#readme",
+  "dependencies": {
+    "http-server": "^13.0.1",
+    "phaser": "^3.55.2"
+  }
+}
