@@ -9,6 +9,11 @@ A javascript game where the user can walk around and interact with the environme
 
 A group of ancient code hunters stumbled upon a mysterious source of code coming from a cave deep in the jungle. When the team got close to the code it corrupted a couple of their team mates causing them to betray their friends and leave them stranded in the cave. Your goal is to make it out of the cave by completing simple tasks related to web development. After the cave level you would proceed to a jungle themed level, a town themed level, a moutain themed level, and finally a temple themed level where a boss battle/activity will ensue. 
 
+## Team Roles
+
+* Tifanny: HTML, CSS skeletons
+* Nate: Working on Tiled maps
+* Devin: Setting up file structure, psuedo coding JS
 
 ## What we need to incorporate into the project 
 
