@@ -1,0 +1,51 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+body {
+  background-color: black;
+}
+.navbar {
+color: white;
+background-color: black;
+font-family: monospace;
+}
+
+.navbar, .navbar-menu, a:hover {
+  color: black;
+}
+.navbar-item, .navbar-burger {
+  background-color: black;
+  color: white;
+}
+
+.navbar .button {
+  background-color: red;
+  color: white;
+  border: .5em red;
+  border-radius: .5em;
+  font-family: monospace;
+}
+
+h4 {
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  color: greenyellow;
+  letter-spacing: 1rem;
+}
+
+.columns {
+  font-family: monospace;
+  text-align: center;
+}
+#column1 {
+ background-color: whitesmoke;
+ border-radius: 1em;
+}
+#column2 {
+ background-color: whitesmoke;
+ border-radius: 1em;
+}
+#column3 {
+ background-color: whitesmoke;
+ border-radius: 1em;
+}
