@@ -83,3 +83,10 @@ General info on game development using HTML, CSS, JavaScript:
 Opensource sprites(graphics/images) for game development:
 
 - [Opensource sprites](https://opengameart.org/)
+- [Tile set we chose to use](https://pipoya.itch.io/pipoya-rpg-tileset-32x32)
+- [Scaling sprite images](https://phasergames.com/scaling-in-phaser-3/)
+
+Running phaser on express server:
+
+- [Webpack Docs](https://webpack.js.org/concepts/)
+- [Deploying to Heroku with Phaser and Express](https://medium.com/@diegoreyes1212/how-to-deploy-phaser-3-node-js-express-webpack-game-to-heroku-tutorial-8a813f31502c)
