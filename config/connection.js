@@ -1,23 +1,23 @@
-// const Sequelize = require('sequelize');
-// require('dotenv').config();
+const Sequelize = require('sequelize');
+require('dotenv').config();
+// Double check routes!!!!!!!!!
 
-// let sequelize;
 
-// if (process.env.JAWSDB_URL) {
-//   sequelize = new Sequelize(process.env.JAWSDB_URL);
-// } else {
-//   sequelize = new Sequelize(
-//     process.env.DB_NAME,
-//     process.env.DB_USER,
-//     process.env.DB_PASSWORD,
-//     {
-//       host: 'localhost',
-//       dialect: 'mysql',
-//       port: 3306
-//     }
-//   );
-// }
+let sequelize;
 
-// module.exports = sequelize;
+if (process.env.JAWSDB_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+} else {
+  sequelize = new Sequelize(
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
+    {
+      host: 'localhost',
+      dialect: 'mysql',
+      port: 3306
+    }
+  );
+}
 
-//^^^^^^^^Stolen from mini project week 14
+module.exports = sequelize;
