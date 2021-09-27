@@ -32,8 +32,14 @@ let player;
 let showDebug = false;
 
 function preload() {
-  this.load.image('tiles', '/assets/tuxmon-sample-32px-extruded.png');
-  this.load.tilemapTiledJSON('map', '/assets/tuxemon-town.json');
+  this.load.image('tiles', '/assets/main-map-big-tileset2.png');
+  this.load.tilemapTiledJSON('map', '/assets/main-map-big3.json');
+  // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
+  // the player animations (walking left, walking right, etc.) in one image. For more info see:
+  //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
+  // If you don't use an atlas, you can do the same thing with a spritesheet, see:
+  //  https://labs.phaser.io/view.html?src=src/animation/single%20sprite%20sheet.js
+  this.load.atlas("atlas", "../assets/atlas/atlas.png", "../assets/atlas/atlas.json");
 }
 
 function create() {
@@ -41,7 +47,7 @@ function create() {
 
   // Parameters are the name you gave the tileset in Tiled and then the key of the tileset image in
   // Phaser's cache (i.e. the name you used in preload)
-  const tileset = map.addTilesetImage('tuxmon-sample-32px-extruded', 'tiles');
+  const tileset = map.addTilesetImage('main-map-big-tileset2', 'tiles');
 
   // Parameters: layer name (or index) from Tiled, tileset, x, y
   const belowLayer = map.createStaticLayer('Below Player', tileset, 0, 0);
