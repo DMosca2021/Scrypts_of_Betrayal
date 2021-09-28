@@ -19,14 +19,14 @@
   },
   "homepage": "https://github.com/DMosca2021/experiments-4-projects#readme",
   "dependencies": {
-    "http-server": "^13.0.1",
-    "phaser": "^3.55.2",
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
+    "express-handlebars": "^5.3.4",
     "express-session": "^1.17.1",
+    "http-server": "^13.0.1",
     "mysql2": "^2.2.5",
+    "phaser": "^3.55.2",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
