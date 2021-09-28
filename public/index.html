@@ -32,8 +32,8 @@ let player;
 let showDebug = false;
 
 function preload() {
-  this.load.image('tiles', '/assets/main-map-big-tileset2.png');
-  this.load.tilemapTiledJSON('map', '/assets/main-map-big3.json');
+  this.load.image('tiles', '/assets/mainmaptileset.png');
+  this.load.tilemapTiledJSON('map', '/assets/mainmapforproject.json');
   // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
   // the player animations (walking left, walking right, etc.) in one image. For more info see:
   //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
@@ -47,15 +47,18 @@ function create() {
 
   // Parameters are the name you gave the tileset in Tiled and then the key of the tileset image in
   // Phaser's cache (i.e. the name you used in preload)
-  const tileset = map.addTilesetImage('main-map-big-tileset2', 'tiles');
+  const tileset = map.addTilesetImage('mainmaptileset', 'tiles');
 
   // Parameters: layer name (or index) from Tiled, tileset, x, y
   const belowLayer = map.createStaticLayer('Below Player', tileset, 0, 0);
   const worldLayer = map.createStaticLayer('World', tileset, 0, 0);
   const aboveLayer = map.createStaticLayer('Above Player', tileset, 0, 0);
+  const cropLayer = map.createStaticLayer('Crops', tileset, 0, 0);
+  const ladderLayer = map.createStaticLayer('Ladders and Vines', tileset, 0, 0);
+  const bridgeLayer = map.createStaticLayer('Bridges', tileset, 0, 0);
 
-  worldLayer.setCollisionByProperty({ collides: true });
-
+  // worldLayer.setCollisionByProperty({collides: true});
+    worldLayer.setCollisionByExclusion([-1]);
   // By default, everything gets depth sorted on the screen in the order we created things. Here, we
   // want the "Above Player" layer to sit on top of the player, so we explicitly give it a depth.
   // Higher depths will sit on top of lower depth objects.
@@ -77,6 +80,8 @@ function create() {
 
   // Watch the player and worldLayer for collisions, for the duration of the scene:
   this.physics.add.collider(player, worldLayer);
+
+  
 
   // Create the player's walking animations from the texture atlas. These are stored in the global
   // animation manager so any sprite can access them.
