@@ -52,8 +52,7 @@ function create() {
   const ladderLayer = map.createStaticLayer('Ladders and Vines', tileset, 0, 0);
   const bridgeLayer = map.createStaticLayer('Bridges', tileset, 0, 0);
 
-  // worldLayer.setCollisionByProperty({collides: true});
-  worldLayer.setCollisionByExclusion([-1]);
+  worldLayer.setCollisionByProperty({collides: true});
   // By default, everything gets depth sorted on the screen in the order we created things. Here, we
   // want the "Above Player" layer to sit on top of the player, so we explicitly give it a depth.
   // Higher depths will sit on top of lower depth objects.
