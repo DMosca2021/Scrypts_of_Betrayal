@@ -1,6 +1,14 @@
 # experiments-4-projects
 Start for project 2 
 
+
+## User Story
+```
+AS A person interested in online games
+I WANT a top down style 2D game where I can log in using my credentials
+SO THAT it will save my progress and I can continue. 
+```
+
 ## Idea for project
 
 A javascript game where the user can walk around and interact with the environment (Think pokemon or legend of zelda). Obstacles in the game will be overcome by completing activities relating to web development knowledge. User will be able to create a profile to save their progress and have the ability to come back and play at any time. We would like to implement an item inventory system if possible. To start we would like to create 5 different levels and have NPCs to interact with for activities as well as in game events.
