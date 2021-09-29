@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
-  </head>
-  <body>
-    
-    <script>
-      const config = {
+const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
@@ -39,7 +30,11 @@ function preload() {
   //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
   // If you don't use an atlas, you can do the same thing with a spritesheet, see:
   //  https://labs.phaser.io/view.html?src=src/animation/single%20sprite%20sheet.js
-  this.load.atlas("atlas", "../assets/atlas/atlas.png", "../assets/atlas/atlas.json");
+  this.load.atlas(
+    'atlas',
+    '../assets/atlas/atlas.png',
+    '../assets/atlas/atlas.json'
+  );
 }
 
 function create() {
@@ -58,7 +53,7 @@ function create() {
   const bridgeLayer = map.createStaticLayer('Bridges', tileset, 0, 0);
 
   // worldLayer.setCollisionByProperty({collides: true});
-    worldLayer.setCollisionByExclusion([-1]);
+  worldLayer.setCollisionByExclusion([-1]);
   // By default, everything gets depth sorted on the screen in the order we created things. Here, we
   // want the "Above Player" layer to sit on top of the player, so we explicitly give it a depth.
   // Higher depths will sit on top of lower depth objects.
@@ -80,8 +75,6 @@ function create() {
 
   // Watch the player and worldLayer for collisions, for the duration of the scene:
   this.physics.add.collider(player, worldLayer);
-
-  
 
   // Create the player's walking animations from the texture atlas. These are stored in the global
   // animation manager so any sprite can access them.
@@ -207,7 +200,3 @@ function update(time, delta) {
     else if (prevVelocity.y > 0) player.setTexture('atlas', 'misa-front');
   }
 }
-    </script>
-
-  </body>
-</html>
