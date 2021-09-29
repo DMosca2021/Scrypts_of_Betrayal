@@ -135,9 +135,9 @@ h4 {
 }
 .btn2:hover::before {
   transform: rotate(-45deg);
-  border: 1px solid black;
+  border: 1px solid limegreen;
 }
 .btn2:hover::after {
   transform: rotate(45deg);
-  border: 1px solid gray;
+  border: 1px solid limegreen;
 }
