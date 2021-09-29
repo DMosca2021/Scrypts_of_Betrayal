@@ -1,5 +1,7 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
 body {
-  background-color: black;
+  background-color: black is-fullheight;
 }
 .navbar {
 color: white;
@@ -47,6 +49,7 @@ h4 {
  font-family: 'Share-TechMono', sans-serif;
   text-align: center;
   color: white;
+  
 }
 
 
