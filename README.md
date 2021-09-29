@@ -90,3 +90,33 @@ Running phaser on express server:
 
 - [Webpack Docs](https://webpack.js.org/concepts/)
 - [Deploying to Heroku with Phaser and Express](https://medium.com/@diegoreyes1212/how-to-deploy-phaser-3-node-js-express-webpack-game-to-heroku-tutorial-8a813f31502c)
+
+## Deliverables for Day1 of Project 2 - 9/28/21
+
+Deliverable for today
+
+- [x] Working (prove it!) GitHub setup and collaboration process (Repo and Project!)
+- [x] Branching, Issues, Pull Requests, Communication!
+- [x] “In writing”: Can be word, pdf, notes, vs markdown, post, snippet, whatever... should have a team message thread or channel (recommended) in Slack. Invite your assigned TA and your instructor to that communication method.
+- [ ] Team Name (optional)
+- [x] Title
+- [x] Description - details please
+- [x] User Stories (at least one)
+- [x] Roles, Wireframe, ‘Authenticated only’ areas of the application identified
+- [ ] External API List with functional GET (Postman or Insomnia)
+- [ ] Internal API ‘High level” structure - Google sheet with Method/Path and related CRUD operation
+- [ ] Timeline (So important!)
+- [ ] Deploy the skeleton
+- [ ] Bonus (recommended): Skeleton deployed to Heroku with database connection (JAWS_DB)
+
+Roles
+
+Project Manager
+GitHub Guru
+Data Flow Doctor (Optional)
+API Researcher (Can be combined with Data Flow)
+Includes your own (app) api
+Node/Express Master
+Presentation Purveyor
+Database Doctor
+HTML/View Expert
