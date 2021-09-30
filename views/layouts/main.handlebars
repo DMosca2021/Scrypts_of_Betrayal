@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" "text/css" href="/assets/css/form.css">
     <link rel="stylesheet" "text/css" href="/assets/css/style.css">
     <script src="//cdn.jsdelivr.net/npm/phaser@3.24.0/dist/phaser.min.js"></script>
@@ -12,49 +11,57 @@
 </head>
 <body>
       <nav class="navbar" role="navigation" aria-label="main navigation">
-    
+         <div class="navbar-brand">
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="/">
-              Home
-              </a>
-      
-              <a class="navbar-item" href="/howto">
-              How to Play
-              </a>
-      
-              <a class="navbar-item" href="/about">
-              About Us
-              </a>
-              <a class="navbar-item" href="/feedback">
-              Feedback
-              </a>
-          </div>
-          </div>
-      </div>
 
-    <div class="navbar-end">
+        <div id="nav-container" class="navbar-menu">
+          <div class="navbar-start">
+            <span class="btn" class="navbar-item">
+              <a href="/">
+                Home
+                </a>
+              </span>
+              <span class="btn" class="navbar-item">
+                <a href="/howto">
+                  How to Play
+                  </a>
+              </span>
+              <span class="btn" class="navbar-item">
+                <a href="/about">
+                  About Us
+                </a>
+              </span>
+              <span class="btn" class="navbar-item">
+                <a href="/feedback">
+                  Feedback
+                </a>
+              </span>
+              <span class="btn" class="navbar-item">
+                <a href="/game">
+                  Play Here
+                  </a>
+            </span>
+           </div>
+        </div>
+  
+     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary" href="/profile">
+          <a class="btn" id="signup" href="/profile">
             <strong>Sign up / Log in</strong>
           </a>
         </div>
       </div>
     </div>
-  </div>
 </nav>
 
     {{{body}}}
   
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script rel="script" src="/assets/js/script.js"></script>
 </body>
