@@ -4,7 +4,9 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    res.render('home');
+    res.render('home', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -12,7 +14,9 @@ router.get('/', async (req, res) => {
 
 router.get('/about', async (req, res) => {
   try {
-    res.render('about');
+    res.render('about', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -20,7 +24,9 @@ router.get('/about', async (req, res) => {
 
 router.get('/howto', async (req, res) => {
   try {
-    res.render('howto');
+    res.render('howto', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -28,7 +34,9 @@ router.get('/howto', async (req, res) => {
 
 router.get('/profile', async (req, res) => {
   try {
-    res.render('profile');
+    res.render('profile',{
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -36,7 +44,9 @@ router.get('/profile', async (req, res) => {
 
 router.get('/game', async (req, res) => {
   try {
-    res.render('game');
+    res.render('game', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -44,7 +54,9 @@ router.get('/game', async (req, res) => {
 
 router.get('/feedback', async (req, res) => {
   try {
-    res.render('feedback');
+    res.render('feedback', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
