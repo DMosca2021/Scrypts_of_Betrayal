@@ -20,12 +20,13 @@ User.init(
     },
     name: {
       type: DataTypes.STRING,
+      // defaultValue: "crabcakes",
       allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      unique: false, //TEMPORARY
       validate: {
         isEmail: true,
       },
