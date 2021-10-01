@@ -44,6 +44,7 @@ h1 {
   font-family: 'VT323', monospace;
 }
 
+/* our names on about us font */
 h3 {
   font-size: 30px;
   text-shadow: 7px 2px 7px red, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(255, 0, 0);
@@ -53,6 +54,7 @@ h3 {
   font-weight: bolder;
 }
 
+/* meet the creators big font */
 h4 {
   font-family: monospace;
   font-size: 60px;
