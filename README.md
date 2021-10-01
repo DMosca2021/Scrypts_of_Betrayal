@@ -111,9 +111,9 @@ Deliverable for today
 - [x] Description - details please
 - [x] User Stories (at least one)
 - [x] Roles, Wireframe, ‘Authenticated only’ areas of the application identified
-- [ ] External API List with functional GET (Postman or Insomnia)
-- [ ] Internal API ‘High level” structure - Google sheet with Method/Path and related CRUD operation
-- [ ] Timeline (So important!)
+- [x] External API List with functional GET (Postman or Insomnia)
+- [x] Internal API ‘High level” structure - Google sheet with Method/Path and related CRUD operation
+- [x] Timeline (So important!)
 - [ ] Deploy the skeleton
 - [ ] Bonus (recommended): Skeleton deployed to Heroku with database connection (JAWS_DB)
 
