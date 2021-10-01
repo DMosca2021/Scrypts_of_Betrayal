@@ -23,8 +23,8 @@ let player;
 let showDebug = false;
 
 function preload() {
-  this.load.image('tiles', '/assets/mainmaptileset.png');
-  this.load.tilemapTiledJSON('map', '/assets/mainmapforprojectv3.json');
+  this.load.image('tiles', '/assets/maps/mainmaptileset.png');
+  this.load.tilemapTiledJSON('map', '/assets/maps/mainmapforprojectv3.json');
   // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
   // the player animations (walking left, walking right, etc.) in one image. For more info see:
   //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
