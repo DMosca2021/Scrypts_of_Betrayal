@@ -24,7 +24,7 @@ let showDebug = false;
 
 function preload() {
   this.load.image('tiles', '/assets/mainmaptileset.png');
-  this.load.tilemapTiledJSON('map', '/assets/mainmapforprojectv2.json');
+  this.load.tilemapTiledJSON('map', '/assets/mainmapforprojectv3.json');
   // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
   // the player animations (walking left, walking right, etc.) in one image. For more info see:
   //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
@@ -52,7 +52,7 @@ function create() {
   const ladderLayer = map.createStaticLayer('Ladders and Vines', tileset, 0, 0);
   const bridgeLayer = map.createStaticLayer('Bridges', tileset, 0, 0);
 
-  worldLayer.setCollisionByProperty({ collides: true });
+  worldLayer.setCollisionByProperty({ collides: true }); 
   // By default, everything gets depth sorted on the screen in the order we created things. Here, we
   // want the "Above Player" layer to sit on top of the player, so we explicitly give it a depth.
   // Higher depths will sit on top of lower depth objects.
