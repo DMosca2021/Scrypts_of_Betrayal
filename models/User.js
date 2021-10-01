@@ -26,7 +26,7 @@ User.init(
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: false, //TEMPORARY
+      // unique: false, //TEMPORARY
       validate: {
         isEmail: true,
       },
