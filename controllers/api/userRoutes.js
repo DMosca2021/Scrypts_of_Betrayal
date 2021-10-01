@@ -1,12 +1,21 @@
 const router = require('express').Router();
-
 const { User } = require('../../models');
 
+router.get('/', async (req, res) => {
+  try {
+    const userData = await User.findAll();
+    res.status(200).json(userData);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // CREATE new user
-router.post('/profile', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const dbUserData = await User.create({
-      username: req.body.name,
+      name: req.body.username,
       email: req.body.email,
       password: req.body.password,
     });
@@ -23,7 +32,7 @@ router.post('/profile', async (req, res) => {
 });
 
 // Login
-router.post('/profile', async (req, res) => {
+router.post('/login', async (req, res) => {
   try {
     const dbUserData = await User.findOne({
       where: {
@@ -72,3 +81,5 @@ router.post('/profile', async (req, res) => {
 // });
 
 module.exports = router;
+
+
