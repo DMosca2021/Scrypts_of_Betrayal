@@ -4,47 +4,59 @@
 
 body {
   background-image: url('/assets/mainmapforprojectv3.png');
+  background-size: auto;
 }
 
+/* navbar text */
 .navbar span,
 .btn {
-  color: white;
-  font-family: monospace;
-  margin: 5px;
-}
-
-.navbar span,
-.btn {
-  color: red;
+  margin: 7px;
+  font-family: 'VT323', monospace;
+  font-size: 25px;
 }
 
 .navbar {
-  background-color: black;
-  color: white;
+  background-color:rgba(0, 0, 0, 0.397);
 }
 
+/* sign up buttom */
 #signup {
   background-color: red;
   color: white;
   border-radius: 1em;
   padding: 5px;
+  font-family: 'VT323', monospace;
 }
 
 #homenav {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
   color: black;
 }
 
-/* home font h1 */
+/* scrypts of betrayal text in homepage */
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   font-family: 'VT323', monospace;
 }
+.neon {
+  color: black;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(255, 0, 0),
+    0 0 80px rgb(255, 0, 0),
+    0 0 100px rgb(255, 0, 0),
+    0 0 125px rgb(255, 0, 0),
+    0 0 150px rgba(255, 0, 0, 0.822);
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 150px;
+}
 
-/* our names on about us font */
+/* our names on about us */
 h3 {
   font-size: 30px;
   text-shadow: 7px 2px 7px red, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(255, 0, 0);
@@ -54,7 +66,7 @@ h3 {
   font-weight: bolder;
 }
 
-/* meet the creators big font */
+/* meet the creators big text */
 h4 {
   font-family: monospace;
   font-size: 60px;
@@ -64,10 +76,6 @@ h4 {
   margin-bottom: 20px;
   font-weight: bolder;
   text-shadow: 5px 5px 5px lime;
-}
-
-#game-body {
-  background-color: black;
 }
 
 /* about us columns */
@@ -88,21 +96,38 @@ h4 {
   background-color: rgb(17, 255, 0);
 }
 
+/* how to play column */
 #column5 {
   background-color: royalblue;
   border-radius: 2em;
 }
 
+/* game page */
+#game-container {
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+  align-content: center;
+}
+#game-body {
+  background-color: black;
+}
+
+/* btn is nav bar and sign in buttons */
+/* btn2 is GitHub link in about us page */
+
+
 .btn:hover,
 .btn:active,
 .btn2:hover,
 .btn2:active, a {
-  color: red;
+  color: black;
 }
+
 .btn:hover,
 .btn2:hover {
   letter-spacing: 5px;
-  color: red;
+  color: black;
 }
 
 .btn2 {
@@ -154,28 +179,3 @@ h4 {
   transform: rotate(45deg);
   border: 1px solid limegreen;
 }
-
-/* text effect */
-
-.neon {
-  color: black;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px rgb(255, 0, 0),
-    0 0 80px rgb(255, 0, 0),
-    0 0 100px rgb(255, 0, 0),
-    0 0 125px rgb(255, 0, 0),
-    0 0 150px rgba(255, 0, 0, 0.822);
-  font-family: 'Press Start 2P', cursive;
-  margin-top: 150px;
-}
-
-#game-container {
-  display: flex;
-  /* height: 100vh; */
-  justify-content: center;
-  align-content: center;
-}
-
