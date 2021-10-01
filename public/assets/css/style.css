@@ -1,5 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
   background-image: url('/assets/mainmapforprojectv3.png');
@@ -36,11 +37,13 @@ body {
   color: black;
 }
 
+/* home font h1 */
 h1 {
   font-size: 70px;
   text-align: center;
   font-family: 'VT323', monospace;
 }
+
 h3 {
   font-size: 30px;
   text-shadow: 7px 2px 7px red, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(255, 0, 0);
@@ -61,6 +64,11 @@ h4 {
   text-shadow: 5px 5px 5px lime;
 }
 
+#game-body {
+  background-color: black;
+}
+
+/* about us columns */
 #column1, 
 #column2, 
 #column3 {
@@ -72,6 +80,7 @@ h4 {
  margin-left: 10px;
 }
 
+/* what was used column */
 #column4 {
   border-radius: 2em;
   background-color: rgb(17, 255, 0);
@@ -147,7 +156,7 @@ h4 {
 /* text effect */
 
 .neon {
-  color: #fff;
+  color: black;
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -157,7 +166,7 @@ h4 {
     0 0 100px rgb(255, 0, 0),
     0 0 125px rgb(255, 0, 0),
     0 0 150px rgba(255, 0, 0, 0.822);
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
   margin-top: 150px;
 }
 
