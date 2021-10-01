@@ -15,11 +15,12 @@ body {
   font-size: 25px;
 }
 
+/* navbar color */
 .navbar {
   background-color:rgba(0, 0, 0, 0.397);
 }
 
-/* sign up buttom */
+/* sign up button */
 #signup {
   background-color: red;
   color: white;
@@ -28,6 +29,7 @@ body {
   font-family: 'VT323', monospace;
 }
 
+/* navigation on home page */
 #homenav {
   text-align: center;
   font-size: 30px;
@@ -115,8 +117,6 @@ h4 {
 
 /* btn is nav bar and sign in buttons */
 /* btn2 is GitHub link in about us page */
-
-
 .btn:hover,
 .btn:active,
 .btn2:hover,
