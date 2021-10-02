@@ -139,10 +139,13 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-#column6 {
-  min-height: max-content;
-}
 
+#about-container {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: ;
+}
 /* game page */
 #game-container {
   display: flex;
