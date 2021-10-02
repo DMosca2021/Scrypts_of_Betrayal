@@ -12,7 +12,7 @@
 <body>
       <nav class="navbar" role="navigation" aria-label="main navigation">
          <div class="navbar-brand">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" aria-label="menu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -22,27 +22,27 @@
         <div id="nav-container" class="navbar-menu">
           <div class="navbar-start">
             <span class="btn" class="navbar-item">
-              <a href="/" style="color: black;">
+              <a href="/" style="color: white;">
                 Home
                 </a>
               </span>
               <span class="btn" class="navbar-item">
-                <a href="/howto" style="color: black;">
+                <a href="/howto" style="color: white;">
                   How to Play
                   </a>
               </span>
               <span class="btn" class="navbar-item">
-                <a href="/about" style="color: black;">
+                <a href="/about" style="color: white;">
                   About Us
                 </a>
               </span>
               <span class="btn" class="navbar-item">
-                <a href="/feedback" style="color: black;">
+                <a href="/feedback" style="color: white;">
                   Feedback
                 </a>
               </span>
               <span class="btn" class="navbar-item">
-                <a href="/game" style="color: black;">
+                <a href="/game" style="color: white;">
                   Play Here
                   </a>
             </span>
@@ -52,26 +52,17 @@
      <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          {{#if logged_in}}
-          <a class="btn" id="logout">
-            <strong>Log Out</strong>
-          </a>
-          {{else}}
           <a class="btn" id="signup" href="/profile">
             <strong>Sign up / Log in</strong>
           </a>
-          {{/if}}
         </div>
       </div>
     </div>
 </nav>
 
     {{{body}}}
-
   
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script rel="script" src="/assets/js/script.js"></script>
-<script src="/assets/js/logout.js"></script>
 </body>
 </html>
