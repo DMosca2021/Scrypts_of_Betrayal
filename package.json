@@ -31,10 +31,10 @@
     "passport-local": "^1.0.0",
     "passport-oauth": "^1.0.0",
     "phaser": "^3.55.2",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
