@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
 body {
   background-image: url('/assets/mainmapforprojectv3.png');
-  background-size: cover;
 }
 /* navbar text */
 .navbar span,
@@ -26,13 +24,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 .clouds img {
   position: absolute;
   bottom: 0;
   max-width: 100%;
   animation: animate calc(10s * var(--i)) linear infinite;
+  background-position: relative;
 }
 @keyframes animate {
   0% {
@@ -52,6 +50,9 @@ body {
   font-family: 'VT323', monospace;
 }
 
+.homenav {
+  background-position:inherit;
+}
 /* navigation on home page */
 #homenav {
   text-align: center;
@@ -151,9 +152,6 @@ h4 {
   background-color: black;
 }
 
-div .container {
-  background-size: cover;
-}
 /* btn is nav bar and sign in buttons */
 /* btn2 is GitHub link in about us page */
 .btn:hover,
