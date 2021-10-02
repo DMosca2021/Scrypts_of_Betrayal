@@ -22,6 +22,7 @@
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "express": "^4.17.1",
+    "express-flash": "0.0.2",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",

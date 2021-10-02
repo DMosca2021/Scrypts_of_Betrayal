@@ -79,6 +79,7 @@ Phaser and Tiled info:
 Info for authentication:
 
 - [Passport docs for authentication](http://www.passportjs.org/)
+- [Passport tutorial](https://www.youtube.com/watch?v=F-sFp_AvHc8)
 
 General info on game development using HTML, CSS, JavaScript:
 
