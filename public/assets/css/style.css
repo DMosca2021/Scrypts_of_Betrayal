@@ -181,6 +181,7 @@ a {
   text-align: center;
   width: 250px;
   cursor: pointer;
+  position: absolute;
 }
 .btn2 {
   transition: all 0.5s;
