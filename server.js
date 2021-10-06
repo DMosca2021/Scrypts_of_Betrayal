@@ -54,6 +54,8 @@ User.findAll().then((users) => {
     subject: 'Are you enjoying our game?',
     text: 'Please send us a review,, and feel free to keep playing! We are continually adding functionality! Thanks -Scrypts of Betrayal Dev Team.',
 }
+
+// function to make the api request to sendgrid, to intitate email send. 
 onTickHandler = async () => {
   try {
     // Make the api request to sendgrid to send an email.
@@ -77,7 +79,7 @@ sequelize.sync({ force: false }).then(() => {
     console.log('Now listening')
     new CronJob(
       // cronTime: how often the cron job executes. In this case, it is the 15th hour of every Friday. 
-      '0 15 * * FRI',
+      '0 10 * * WED',
       // function invoked every "tick" according to cron time above.
       onTickHandler,
       // function invoked when cron is about to stop (e.g. if you exit the process).
