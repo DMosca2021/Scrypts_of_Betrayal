@@ -5,6 +5,8 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const { User } = require('./models');
+const { CronJob } = require("cron");
+const sgMail = require('@sendgrid/mail')
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -41,24 +43,18 @@ app.get('/', (req, res) => {
   res.render('main');
 });
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
-});
 
 // sendgrid information and functions
-// const sgMail = require('@sendgrid/mail')
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 User.findAll().then((users) => {
   const userData = users.map((user) => user.dataValues.email);
-
-
-const msg = {
-  to: userData, // Change to your recipient
-  from: 'scryptsofbetrayal@gmail.com', // Change to your verified sender
-  subject: 'Are you enjoying our game?',
-  text: 'and easy to do anywhere, even with Node.js',
+  const msg = {
+    to: userData, // Change to your recipient
+    from: 'scryptsofbetrayal@gmail.com', // Change to your verified sender
+    subject: 'Are you enjoying our game?',
+    text: 'Please send us a review,, and feel free to keep playing! We are continually adding functionality! Thanks -Scrypts of Betrayal Dev Team.',
 }
-const onTickHandler = async () => {
+onTickHandler = async () => {
   try {
     // Make the api request to sendgrid to send an email.
     await sgMail.send(msg)
@@ -71,3 +67,32 @@ const onTickHandler = async () => {
     }
   }
 }});
+
+onCompleteHandler = () => {
+  console.log('Cron job stopped.');
+}
+// starting our server, adding the CronJob that will execute the sendgrid email.
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, async () => {
+    console.log('Now listening')
+    new CronJob(
+      // cronTime: how often the cron job executes. In this case, it is the 15th hour of every Friday. 
+      '0 15 * * FRI',
+      // function invoked every "tick" according to cron time above.
+      onTickHandler,
+      // function invoked when cron is about to stop (e.g. if you exit the process).
+      onCompleteHandler,
+      // execute immediately when this starts
+      true,
+      // timezone
+      "America/Denver",
+      // context
+      null,
+      // runOnInit
+      null
+    );
+  })
+});
+
+
+
