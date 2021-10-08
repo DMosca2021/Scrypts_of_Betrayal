@@ -64,7 +64,7 @@ Ex: In order to get an item from a chest you will need to finish a section of in
 ```
 
 ## Technologies
-
+<div style='margin: 1em 0;'>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="4%" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="4%" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original-wordmark.svg" alt="handlebars" width="4%"/>
@@ -78,7 +78,7 @@ Ex: In order to get an item from a chest you will need to finish a section of in
 <img src="./public/assets/img/restful-api.png" alt="restfulAPI" width="8%">
 <img src="./public/assets/img/sequelize.png" alt="sequelize" width="8%">
 <img src="./public/assets/img/heroku.png" alt="heroku" width="8%">
-
+</div>
 ## 
 
 
