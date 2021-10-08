@@ -8,7 +8,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 html {
