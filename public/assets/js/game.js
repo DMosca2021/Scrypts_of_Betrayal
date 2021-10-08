@@ -131,15 +131,15 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   // Help text that has a "fixed" position on the screen
-  this.add
-    .text(16, 16, 'Arrow keys to move\nPress "D" to show hitboxes', {
-      font: '18px monospace',
-      fill: '#000000',
-      padding: { x: 20, y: 10 },
-      backgroundColor: '#ffffff',
-    })
-    .setScrollFactor(0)
-    .setDepth(30);
+  // this.add
+  //   .text(16, 16, 'Arrow keys to move\nPress "D" to show hitboxes', {
+  //     font: '18px monospace',
+  //     fill: '#000000',
+  //     padding: { x: 20, y: 10 },
+  //     backgroundColor: '#ffffff',
+  //   })
+  //   .setScrollFactor(0)
+  //   .setDepth(30);
 
   // Debug graphics
   this.input.keyboard.once('keydown-D', (event) => {
