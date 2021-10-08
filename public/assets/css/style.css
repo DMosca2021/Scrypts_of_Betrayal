@@ -141,8 +141,6 @@ h4 {
   border-radius: 2em;
   background-color: rgb(17, 255, 0);
   text-align: center;
-  width: 500px;
-  margin-left: 500px;
 }
 
 /* how to play column */
@@ -152,8 +150,6 @@ h4 {
   color: black;
   font-size: 20px;
   display: flex;
-  justify-content: center;
-  margin: 100px;
 }
 
 /* game page */
