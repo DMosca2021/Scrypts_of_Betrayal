@@ -79,6 +79,5 @@ Ex: In order to get an item from a chest you will need to finish a section of in
 <img src="./public/assets/img/sequelize.png" alt="sequelize" width="8%">
 <img src="./public/assets/img/heroku.png" alt="heroku" width="8%">
 </div>
-## 
 
 
