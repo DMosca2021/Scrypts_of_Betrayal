@@ -8,9 +8,8 @@ body {
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
-
 html {
   height: 100%;
   width: 100%;
@@ -61,6 +60,7 @@ html {
   border-radius: 1em;
   padding: 5px;
   font-family: 'VT323', monospace;
+  font-size: 30px;
 }
 
 .homenav {
@@ -114,13 +114,17 @@ h3 {
 /* meet the creators big text */
 h4 {
   font-family: monospace;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   color: rgb(0, 0, 0);
-  letter-spacing: 2rem;
-  margin-bottom: 20px;
   font-weight: bolder;
   text-shadow: 5px 5px 10px lime;
+}
+
+#meet {
+  background-color: rgb(17, 255, 0);
+  border-radius: 2em;
+  margin: 20px;
 }
 
 /* about us columns */
@@ -136,11 +140,12 @@ h4 {
   padding: 5px;
 }
 
-/* what was used column */
+/* resources column */
 #column4 {
   border-radius: 2em;
   background-color: rgb(17, 255, 0);
   text-align: center;
+  justify-content: center;
 }
 
 /* how to play column */
