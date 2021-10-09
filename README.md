@@ -1,6 +1,6 @@
 # Scrypts of Betrayal
 
-<img align="center" src="https://raw.githubusercontent.com/DMosca2021/project2_DNT_21/main/public/assets/img/scrypts-logo.PNG?token=AT6ADUPVVGEJRE2V55SV4PTBL6WJU">
+<img align="center" src="https://raw.githubusercontent.com/DMosca2021/project2_DNT_21/main/public/assets/img/scrypts-logo.PNG?token=AT6ADUIDYST7UVSLUZJLCLDBMHALU">
 
 ## Description
 
